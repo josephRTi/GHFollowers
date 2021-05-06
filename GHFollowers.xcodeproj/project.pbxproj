@@ -96,6 +96,54 @@
 			path = GHFollowers;
 			sourceTree = "<group>";
 		};
+		A040218C2643FF410099BF78 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A040218D2643FF470099BF78 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				A00B0526262DCA5F00B2C0C2 /* GFButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		A040218E2643FF560099BF78 /* TextFields */ = {
+			isa = PBXGroup;
+			children = (
+				A00B052C262E342000B2C0C2 /* GFTextField.swift */,
+			);
+			path = TextFields;
+			sourceTree = "<group>";
+		};
+		A040218F2643FF660099BF78 /* ImageViews */ = {
+			isa = PBXGroup;
+			children = (
+				A087890F2642A3F8000FF4E1 /* GFAvatarImageView.swift */,
+			);
+			path = ImageViews;
+			sourceTree = "<group>";
+		};
+		A04021902643FF760099BF78 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A0D4968B263574F500ADA802 /* GFAlertVC.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A04021912643FFAB0099BF78 /* Labels */ = {
+			isa = PBXGroup;
+			children = (
+				A00B0539263446CA00B2C0C2 /* GFBodyLabel.swift */,
+				A00B05362634393D00B2C0C2 /* GFTitleLabel.swift */,
+			);
+			path = Labels;
+			sourceTree = "<group>";
+		};
 		A087890726386982000FF4E1 /* Utilites */ = {
 			isa = PBXGroup;
 			children = (
@@ -126,13 +174,13 @@
 		A0D496922636FFC000ADA802 /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
+				A04021912643FFAB0099BF78 /* Labels */,
+				A04021902643FF760099BF78 /* ViewControllers */,
+				A040218F2643FF660099BF78 /* ImageViews */,
+				A040218E2643FF560099BF78 /* TextFields */,
+				A040218D2643FF470099BF78 /* Buttons */,
+				A040218C2643FF410099BF78 /* Views */,
 				A087890B2642A222000FF4E1 /* Cells */,
-				A0D4968B263574F500ADA802 /* GFAlertVC.swift */,
-				A00B0526262DCA5F00B2C0C2 /* GFButton.swift */,
-				A00B052C262E342000B2C0C2 /* GFTextField.swift */,
-				A00B05362634393D00B2C0C2 /* GFTitleLabel.swift */,
-				A00B0539263446CA00B2C0C2 /* GFBodyLabel.swift */,
-				A087890F2642A3F8000FF4E1 /* GFAvatarImageView.swift */,
 			);
 			path = "Custom Views";
 			sourceTree = "<group>";

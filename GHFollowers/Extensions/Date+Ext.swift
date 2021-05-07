@@ -11,7 +11,8 @@ extension Date {
     
     func convertToMonthYearFormat() -> String {
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "MMM yyyy"
+        dateFormatter.dateFormat = "MMMM yyyy"
+        dateFormatter.locale = Locale(identifier: "ru_RU")
         return dateFormatter.string(from: self)
     }
 }

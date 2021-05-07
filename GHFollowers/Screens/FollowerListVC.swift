@@ -44,6 +44,8 @@ class FollowerListVC: UIViewController {
     func configureViewController() {
         view.backgroundColor = .systemBackground
         navigationController?.navigationBar.prefersLargeTitles = true
+        let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addButtonTapped))
+        navigationItem.rightBarButtonItem = addButton
     }
     
     func configureCollectionView() {
@@ -58,7 +60,7 @@ class FollowerListVC: UIViewController {
         let searchController = UISearchController()
         searchController.searchResultsUpdater = self
         searchController.searchBar.delegate = self
-        searchController.searchBar.placeholder = "Search for a username"
+        searchController.searchBar.placeholder = "Поиск пользователя"
         searchController.obscuresBackgroundDuringPresentation = false
         navigationItem.searchController = searchController
     }
@@ -75,7 +77,7 @@ class FollowerListVC: UIViewController {
                 self.followers.append(contentsOf: followers)
                 
                 if self.followers.isEmpty {
-                    let message = "This user doesen't have any followers. Go follow them 😄."
+                    let message = "У этого пользователя нет подписчиков. Подпишитесь на него😄."
                     DispatchQueue.main.async {
                         self.showEmptyStateView(with: message, in: self.view)
                     }
@@ -84,7 +86,7 @@ class FollowerListVC: UIViewController {
                 
                 self.updateData(on: self.followers)
             case .failure(let error):
-                self.presentGFAlertOnMainThread(title: "Bad stuff happened", message: error.rawValue, buttonTitle: "Ok")
+                self.presentGFAlertOnMainThread(title: "Что-то пошло не так", message: error.rawValue, buttonTitle: "Ok")
             }
         }
     }
@@ -104,6 +106,10 @@ class FollowerListVC: UIViewController {
         DispatchQueue.main.async {
             self.dataSource.apply(snapshot, animatingDifferences: true)
         }
+    }
+    
+    @objc func addButtonTapped() {
+        print("add button tapped")
     }
 }
 

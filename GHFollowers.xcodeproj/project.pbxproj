@@ -34,6 +34,7 @@
 		A0C29E1026446BFD00962129 /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C29E0F26446BFD00962129 /* Date+Ext.swift */; };
 		A0C29E1326446C3600962129 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C29E1226446C3600962129 /* String+Ext.swift */; };
 		A0C29E162645517600962129 /* PersistanceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C29E152645517600962129 /* PersistanceManager.swift */; };
+		A0C29E19264579D700962129 /* FavoriteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C29E18264579D700962129 /* FavoriteCell.swift */; };
 		A0D4968C263574F500ADA802 /* GFAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D4968B263574F500ADA802 /* GFAlertVC.swift */; };
 		A0D4968F26357DBD00ADA802 /* UIViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D4968E26357DBD00ADA802 /* UIViewControllerExt.swift */; };
 		A0D4969826375A6700ADA802 /* Follower.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D4969726375A6700ADA802 /* Follower.swift */; };
@@ -71,6 +72,7 @@
 		A0C29E0F26446BFD00962129 /* Date+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ext.swift"; sourceTree = "<group>"; };
 		A0C29E1226446C3600962129 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 		A0C29E152645517600962129 /* PersistanceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistanceManager.swift; sourceTree = "<group>"; };
+		A0C29E18264579D700962129 /* FavoriteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCell.swift; sourceTree = "<group>"; };
 		A0D4968B263574F500ADA802 /* GFAlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFAlertVC.swift; sourceTree = "<group>"; };
 		A0D4968E26357DBD00ADA802 /* UIViewControllerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExt.swift; sourceTree = "<group>"; };
 		A0D4969726375A6700ADA802 /* Follower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Follower.swift; sourceTree = "<group>"; };
@@ -197,6 +199,7 @@
 			isa = PBXGroup;
 			children = (
 				A087890C2642A24F000FF4E1 /* FollowerCell.swift */,
+				A0C29E18264579D700962129 /* FavoriteCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -348,6 +351,7 @@
 				A0D4968C263574F500ADA802 /* GFAlertVC.swift in Sources */,
 				A0453154264466A300038AAE /* GFFollowerItemVC.swift in Sources */,
 				A045314B2644562500038AAE /* GFItemInfoView.swift in Sources */,
+				A0C29E19264579D700962129 /* FavoriteCell.swift in Sources */,
 				A087890D2642A24F000FF4E1 /* FollowerCell.swift in Sources */,
 				A0C29E162645517600962129 /* PersistanceManager.swift in Sources */,
 				A087890926386999000FF4E1 /* GFError.swift in Sources */,

@@ -18,5 +18,5 @@ struct User: Codable {
     var htmlUrl: String
     let following: Int
     let followers: Int
-    let createdAt: String
+    let createdAt: Date
 }
